@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F8FCFF;
+}
+.content > * {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+@media screen and (min-width:1440px){
+    .container {
+        padding: 0 30px;
+    }
+}
+header {
+    margin-top: 30px;
+}
+
+header .container > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text{
+    margin: 48px 0 40px;
+}
+
+.top-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.top-button:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/images/arrow-button.png) transparent no-repeat center;
+    background-size: cover;
+    content: '';
+    width: 50px;
+    height: 100%;
+    display: block;
+}
+
+.header-left {
+    flex: 3;
+    padding-top: 65px;
+    background: url(/images/shado.png) transparent no-repeat center;
+    background-size: 120%;
+}
+
+.header-right {
+    flex: 4;
+    background: url(/images/header_card.png) transparent no-repeat center;
+    background-size: contain;
+}
+
+.trigger-fire-bold {
+    font-size: 30px;
+}
+.trigger-fire {
+    background: url(/images/fire.png) transparent no-repeat center;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.trigger-icon {
+    background: url(/images/icon.png) transparent no-repeat center;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    background-size: contain;
+    margin-bottom: 15px;
+}
+
+.triggers>div{
+    margin-right: 10px;
+}
+
+.triggers>div:last-child{
+    margin-right: 0;
+}
+
+.triggers .bold,
+.triggers .medium{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff73;
+}
+
+.modal {
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    max-width: 500px;
+    max-height: 400px;
+    background: white;
+    box-shadow: 0 0 50px -10px black;
+}
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal h2{
+    margin-bottom: 20px;
+}
+
+.modal input[type=text]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 50px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.modal input[type=submit]{
+    box-shadow: inset 0 0 4px -2px black;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+    border: none;
+    outline: none;
+    height: 50px;
+    margin-top: 15px;
+}
